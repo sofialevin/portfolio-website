@@ -3186,3 +3186,7 @@ input, select, textarea {
 			}
 
 	}
+
+	#one .actions {
+		display: inline-block;
+	}
