@@ -3189,4 +3189,27 @@ input, select, textarea {
 
 	#one .actions {
 		display: inline-block;
+		margin-right: 20px;
+	}
+
+	.panel {
+		-webkit-transform: translateZ( 0 );
+		transform: translateZ( 0 );
+		-webkit-transition: -webkit-transform 0.6s ease-in-out;
+		transition: transform 0.6s ease-in-out;
+		-webkit-backface-visibility: hidden;	
+	}
+
+	a[ id= "two" ]:target ~ #main article.panel {
+		-webkit-transform: translateY( 0px);
+		transform: translateY( 0px );
+	}
+	
+	a[ id= "three" ]:target ~ #main article.panel {
+		-webkit-transform: translateY( -500px );
+		transform: translateY( -500px );
+	}
+	a[ id= "four" ]:target ~ #main article.panel {
+		-webkit-transform: translateY( -1000px );
+		transform: translateY( -1000px );
 	}
